@@ -1,0 +1,198 @@
+/* variables generales*/
+
+:root {
+    /* bg colors */
+    --main-color: black;
+    --my-fondo-documento: rgb(255, 255, 255); 
+    --nav-fondo:  rgb(255, 255, 255);
+    --fondo-sec2:  rgb(236, 236, 236);
+  
+    /* Texto colores */
+    --text-color-titulo:  rgb(0, 0, 0); 
+    --text-documento: #000000;
+    --text-nav-blanco: #f3f4f6;
+    --text-nav-texto:  rgb(0, 0, 0); 
+    /* Decoracion */
+   
+  }
+ 
+.pag_grid {
+    display: grid;
+    grid-template-areas: 
+        "nav nav nav"
+        "producto producto producto"
+        "servicio servicio servicio"
+        "contacto contacto contacto"
+        "footer footer footer";
+    grid-template-rows: 60px 3fr 3fr 3fr 100px;
+    grid-template-columns: 20% auto 20%;
+
+
+}
+* { 
+    border: 1px solid rgb(255, 0, 0);
+    font-family: 'Adobe Gothic Std B', Arial, Helvetica, sans-serif;
+    list-style-type: none;
+
+}
+
+.titulopag {
+    color: var(--text-color-titulo);
+    font-family: 'Adobe Gothic Std B';
+    font-size: 45px;
+    :
+
+}
+.nav {
+        grid-area: nav;
+        display: grid;  
+        position:fixed;
+        top:0;
+        width:100%;
+        background-color: var(--nav-fondo);
+
+}
+nav:hover {
+    background-color: transparent;
+    /*background-color: rgb(0, 0, 0, .5);
+    opaciodad al fondo cuando pasa el mouse*/
+
+}
+body {
+    background: var(--my-fondo-documento);
+    color: var(--text-documento);
+}
+.producto {
+    grid-area: producto;
+
+}
+
+.servicio {
+    grid-area: servicio;
+
+}
+
+.contacto {
+    grid-area: contacto;
+
+}
+
+.footer {
+    grid-area: footer;
+    display: flex;
+    justify-content: center;
+
+}
+.nav_menu {
+    display: flex;
+    justify-content: center;
+
+    
+}
+.navbar-list {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+
+}
+
+.navbar-list a,.pers-list a {
+    font-family: 'Adobe Gothic Std B';
+    font-size: 22px;
+    color: var(--text-nav-texto );
+  
+
+}
+
+.info-cards-container {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.info-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.contacto{
+    display: flex;
+    justify-content: center;
+}
+
+.contacto-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.redes {
+    display: flex;
+    justify-content: center;
+    
+}
+.redes img {
+    height: 45px;
+    width: 50px;
+}
+
+#menu-toggle, #pers-toggle {
+    display: none;
+} 
+.pers-label {
+    display: flex;
+    order: 2;
+    cursor: pointer;
+}
+.pers-list{
+    position: absolute;
+    top: 65px;
+    left: 5%;
+    right: 5%;
+    width: 50%;
+    flex-direction: column;
+    border-top: none;
+    border-radius: 0px 0px 15px 15px;
+    align-items: center;
+    padding: 45px 30px;
+    gap: 25px;
+    z-index: 2;
+    display: none;
+}
+
+#pers-toggle:checked  + .pers-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+.producto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+.card-producto img{
+
+    height: 400px;
+    width: 500px;
+
+}
+
+.caption {
+	color: white;
+	text-shadow: 1px 1px black;
+	font-size: 8vw;
+	position: absolute;
+	bottom: 8vw;
+	right: 4vw;
+	width: 800;
+	height: 600;
+}
+.enviar {
+    display: flex;
+    justify-content: end;
+}

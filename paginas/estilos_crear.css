@@ -1,0 +1,38 @@
+:root {
+    /* bg colors */
+    --main-color: black;
+    --my-fondo-documento: rgb(255, 255, 255); 
+    --nav-fondo:  rgb(255, 255, 255);
+    --fondo-sec2:  rgb(236, 236, 236);
+  
+    /* Texto colores */
+    --text-color-titulo:  rgb(0, 0, 0); 
+    --text-documento: #000000;
+    --text-nav-blanco: #f3f4f6;
+    --text-nav-texto:  rgb(0, 0, 0); 
+    /* Decoracion */
+   
+  }
+
+body {
+background: var(--my-fondo-documento);
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+align-items: center;
+
+
+}
+
+.cuerpo_nue {
+    display: flex;
+    flex-direction: column;
+    border: solid 2px;
+    border-radius: 10px;
+    padding: 20px;
+    width: 210px;
+}
+.boton {
+    display: flex;
+    justify-content: end;
+}

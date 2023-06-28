@@ -1,0 +1,51 @@
+:root {
+    /* bg colors */
+    --main-color: black;
+    --my-fondo-documento: rgb(255, 255, 255); 
+    --nav-fondo:  rgb(255, 255, 255);
+    --fondo-sec2:  rgb(236, 236, 236);
+  
+    /* Texto colores */
+    --text-color-titulo:  rgb(0, 0, 0); 
+    --text-documento: #000000;
+    --text-nav-blanco: #f3f4f6;
+    --text-nav-texto:  rgb(0, 0, 0); 
+    /* Decoracion */
+   
+  }
+ 
+body{
+	background: var(--my-fondo-documento);
+	padding: 15px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+}
+
+.grid-container{
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(150px,1fr));
+	grid-auto-rows: 100px;
+	grid-gap: 10px;
+	width: 70%;
+	
+
+}
+
+img {
+	width: 100%;
+	height: 100%
+	object-fit: cover;
+
+}  
+
+img:first-child {
+	grid-column: 1 / 3;
+	grid-row: 1 / 3;
+  } 
+
+  img:nth-child(6) {
+	grid-column: 2 / 4;
+	grid-row: 3 / 5;
+  } 
