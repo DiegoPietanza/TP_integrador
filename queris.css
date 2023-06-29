@@ -13,7 +13,10 @@
         justify-content: center;
         align-items: center;
      }
+     .producto {
+        flex-direction: column;
 
+    }    
 }
 /* celus */
 
@@ -26,8 +29,10 @@
         right: 5%;
         width: 80%;
         flex-direction: column;
-        /* background-color: rgba(21,0,179,1);
-        border: 2px solid rgb(94, 220, 252); */
+        border: solid #000000;
+        background: rgb(255,255,255);
+        background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(241,40,40,1) 100%);
+               
         border-top: none;
         border-radius: 0px 0px 15px 15px;
         align-items: center;

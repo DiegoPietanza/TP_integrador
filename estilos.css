@@ -30,17 +30,31 @@
 
 }
 * { 
-    border: 1px solid rgb(255, 0, 0);
+    /*border: 1px solid rgb(255, 0, 0);*/
     font-family: 'Adobe Gothic Std B', Arial, Helvetica, sans-serif;
     list-style-type: none;
 
 }
 
-.titulopag {
+.titulopag h1 {
     color: var(--text-color-titulo);
-    font-family: 'Adobe Gothic Std B';
+    font-family: "Bodoni MT Black" ,'Adobe Gothic Std B';
     font-size: 45px;
-    :
+    background: linear-gradient(to top, #000000, #32b8da);
+    background-clip: text;
+    color: transparent;
+    -webkit-background-clip: text;
+    }
+
+.titulopag a {
+    color: blue;
+    background: rgb(255,255,255);
+    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(241,40,40,1) 100%);
+    width: 138px;
+    padding: 8px 0px;
+    border-radius: 10px;
+    font-size: 18px;
+    text-align: center;
 
 }
 .nav {
@@ -49,7 +63,10 @@
         position:fixed;
         top:0;
         width:100%;
-        background-color: var(--nav-fondo);
+        height: 82px;
+        background: rgb(241,40,40);
+        background: linear-gradient(90deg, rgba(241,40,40,1) 0%, rgba(255,255,255,1) 50%, rgba(241,40,40,1) 100%);
+        /*background-color: var(--nav-fondo);*/
 
 }
 nav:hover {
@@ -64,6 +81,10 @@ body {
 }
 .producto {
     grid-area: producto;
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 120px;
+    padding-top: 80px;
 
 }
 
@@ -74,6 +95,10 @@ body {
 
 .contacto {
     grid-area: contacto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: solid 1px #000000;
 
 }
 
@@ -81,6 +106,7 @@ body {
     grid-area: footer;
     display: flex;
     justify-content: center;
+    align-items: end;
 
 }
 .nav_menu {
@@ -94,6 +120,7 @@ body {
     align-items: center;
     gap: 15px;
 
+    
 
 }
 
@@ -116,6 +143,8 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
+    padding: 10px;
 }
 .contacto{
     display: flex;
@@ -149,6 +178,9 @@ body {
 }
 .pers-list{
     position: absolute;
+    border: solid #000000;
+    background: rgb(255,255,255);
+    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(241,40,40,1) 100%);
     top: 65px;
     left: 5%;
     right: 5%;
@@ -161,17 +193,19 @@ body {
     gap: 25px;
     z-index: 2;
     display: none;
+
 }
 
 #pers-toggle:checked  + .pers-list {
     display: flex;
     justify-content: center;
-    align-items: center;
+    
     }
 .producto {
     display: flex;
     justify-content: center;
     align-items: center;
+    border-bottom: solid 1px black;
 
 
 }
@@ -196,3 +230,50 @@ body {
     display: flex;
     justify-content: end;
 }
+.hero-card {
+    width: 300px;
+    background: rgb(255,255,255);
+    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(241,40,40,1) 100%);
+    
+    padding: 20px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+
+}
+.pedircontacto_ {
+
+
+
+
+}
+.pedircontacto_ {
+
+    border: solid 2px;
+    border-radius: 10px;
+    padding: 20px;
+    width: 210px;
+    background: rgb(255,255,255);
+    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(241,40,40,1) 100%);
+    justify-content: center;
+
+}
+.pedircontacto_ textarea {
+    width:100%;  
+    word-wrap: break-word;
+
+}
+
+.titulopag .elemento-button {
+    font-family: "Mulish", Sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    background-color: #F43627;
+    border-radius: 8px 8px 8px 8px;
+    padding: 18px 70px 18px 70px;
+}
+
+

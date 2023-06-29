@@ -31,6 +31,8 @@ align-items: center;
     border-radius: 10px;
     padding: 20px;
     width: 210px;
+    background: rgb(255,255,255);
+    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(241,40,40,1) 100%);
 }
 .boton {
     display: flex;
