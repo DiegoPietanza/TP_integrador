@@ -21,10 +21,11 @@
     grid-template-areas: 
         "nav nav nav"
         "producto producto producto"
+        "beneficios beneficios beneficios"
         "servicio servicio servicio"
         "contacto contacto contacto"
         "footer footer footer";
-    grid-template-rows: 60px 3fr 3fr 3fr 100px;
+    grid-template-rows: 60px 2fr 4fr 2fr 2fr 100px;
     grid-template-columns: 20% auto 20%;
 
 
@@ -40,10 +41,11 @@
     color: var(--text-color-titulo);
     font-family: "Bodoni MT Black" ,'Adobe Gothic Std B';
     font-size: 45px;
-    background: linear-gradient(to top, #000000, #32b8da);
+    background: linear-gradient(to top, #000000, #da3232);
     background-clip: text;
     color: transparent;
     -webkit-background-clip: text;
+    padding-right: 10px;
     }
 
 .titulopag a {
@@ -91,6 +93,22 @@ body {
 .servicio {
     grid-area: servicio;
 
+}
+.beneficios {
+    grid-area:  beneficios;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: solid 1px black;
+}
+.beneficios p {
+    font-family: 'Adobe Gothic Std B';
+    font-size: 20px;
+    color: var(--text-nav-texto );
+    width: 500px;
+    text-align: center;
+   
 }
 
 .contacto {
@@ -182,8 +200,8 @@ body {
     background: rgb(255,255,255);
     background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(241,40,40,1) 100%);
     top: 65px;
-    left: 5%;
-    right: 5%;
+    left: 20%;
+    right: 10%;
     width: 50%;
     flex-direction: column;
     border-top: none;
@@ -198,7 +216,7 @@ body {
 
 #pers-toggle:checked  + .pers-list {
     display: flex;
-    justify-content: center;
+    justify-content:end; 
     
     }
 .producto {
@@ -216,15 +234,17 @@ body {
 
 }
 
-.caption {
+
+p.caption {
 	color: white;
 	text-shadow: 1px 1px black;
-	font-size: 8vw;
-	position: absolute;
-	bottom: 8vw;
+	font-size: 6vw;
+    bottom: 8vw;
 	right: 4vw;
 	width: 800;
 	height: 600;
+
+
 }
 .enviar {
     display: flex;
@@ -243,14 +263,8 @@ body {
     gap: 20px;
 
 }
+
 .pedircontacto_ {
-
-
-
-
-}
-.pedircontacto_ {
-
     border: solid 2px;
     border-radius: 10px;
     padding: 20px;
@@ -276,4 +290,33 @@ body {
     padding: 18px 70px 18px 70px;
 }
 
+.info-card p {
+        border: #da3232;
+        border-radius: 5px;
+        gap: 10px;
+        left: 0;
+        width: 100%;
+        padding: 10px 16px;
+        color: #0f0d0d;
+        font-size: 1.1em;
+        line-height: 1.6em;
+        margin: 0;
+        border-radius: 10px;
+        
 
+   }
+   .info-card {
+        background:#da3232;
+        width: 300px;
+        display: inline-block;
+        margin: auto;
+        border-radius: $border-radius-size + 5;
+        gap: 5px;
+        text-align: center;
+        box-shadow: -1px 15px 30px -12px black;
+        margin: 10px;
+
+ }
+ .info-card img {
+    border-radius: 10px;
+ }

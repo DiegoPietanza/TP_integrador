@@ -40,3 +40,13 @@ body {
     display: flex;
     justify-content: end;
 }
+.titulopag h1 {
+    color: var(--text-color-titulo);
+    font-family: "Bodoni MT Black" ,'Adobe Gothic Std B';
+    font-size: 45px;
+    background: linear-gradient(to top, #000000, #da3232);
+    background-clip: text;
+    color: transparent;
+    -webkit-background-clip: text;
+    padding-right: 10px;
+}
