@@ -26,7 +26,7 @@
         "contacto contacto contacto"
         "footer footer footer";
     grid-template-rows: 60px 2fr 4fr 2fr 2fr 100px;
-    grid-template-columns: 20% auto 20%;
+    grid-template-columns: 20% 60% 20%;
 
 
 }
@@ -83,11 +83,20 @@ body {
 }
 .producto {
     grid-area: producto;
-    display: flex;
-    flex-direction: row;
+    /*
+    display: grid;
+    justify-content: center;  
+    align-items: center;
+      */ 
     padding-bottom: 120px;
     padding-top: 80px;
-
+    border-bottom: solid 1px black;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content:space-evenly;
+    
+    /*align-items: center; */
 }
 
 .servicio {
@@ -219,14 +228,7 @@ body {
     justify-content:end; 
     
     }
-.producto {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-bottom: solid 1px black;
 
-
-}
 .card-producto img{
 
     height: 400px;
@@ -320,3 +322,11 @@ p.caption {
  .info-card img {
     border-radius: 10px;
  }
+
+ .titulopag {
+    flex-shrink: 4;
+ }
+ .hero-card {
+    flex-shrink: 4;
+ }
+ 
