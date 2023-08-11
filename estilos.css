@@ -94,7 +94,7 @@ body {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content:space-evenly;
+    justify-content:center;
     
     /*align-items: center; */
 }
@@ -266,6 +266,33 @@ p.caption {
 
 }
 
+@keyframes translateX {
+    0% {
+      transform: translateX(-40%);
+    }
+    100% {
+      transform: translateX(0%);
+    }
+  }
+  .titulopag {
+    animation: translateX 2s;
+/*  cambio color y tamaño*/
+    transition-property: all;
+    transition-duration: 1s;
+    cursor: pointer;
+
+  }
+  .titulopag h1:hover {
+    font-size: 50px;
+    background: linear-gradient(to top,#da3232, #000000);
+    background-clip: text;  
+    color: transparent;
+    -webkit-background-clip: text;
+    transition-property: all;
+    transition-duration: 1s;
+  }
+  
+
 .pedircontacto_ {
     border: solid 2px;
     border-radius: 10px;
@@ -330,3 +357,5 @@ p.caption {
     flex-shrink: 4;
  }
  
+
+  
