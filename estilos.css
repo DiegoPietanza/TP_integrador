@@ -222,13 +222,13 @@ body {
     display: none;
 
 }
-
+/*
 #pers-toggle:checked  + .pers-list {
     display: flex;
     justify-content:end; 
     
     }
-
+*/
 .card-producto img{
 
     height: 400px;
@@ -317,6 +317,7 @@ p.caption {
     background-color: #F43627;
     border-radius: 8px 8px 8px 8px;
     padding: 18px 70px 18px 70px;
+    margin: 10px;
 }
 
 .info-card p {
@@ -357,5 +358,9 @@ p.caption {
     flex-shrink: 4;
  }
  
-
+.grla_esc{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
   
